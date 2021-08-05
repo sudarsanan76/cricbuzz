@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Players</title>
+  </head>
+  <style>
+    a:hover{
+      text-decoration: underline;
+    }
+    td:hover{
+      text-decoration: underline;
+    }
+    
+  </style>
+  <script src="js/jquery.js"></script>
+  <script>
+ $(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+  
+  });
+
+</script>
+  <body style="background-color: #f5f5be">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #285741;" >
+        
+        <div class="container " >
+          <a class="navbar-brand" href="#">
+              <img class="img-fluid" width="150" src="https://iconape.com/wp-content/files/ck/321463/svg/321463.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">Schedule</a>
+              </li>
+              <div class="nav-item">
+                <a class="nav-link" href="Teams.html">Teams</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="Ipl.html">IPL</a>
+                
+              </div>
+              <div class="nav-item">
+                <a class="nav-link active" href="playersinfo.html">Players</a>
+                
+              </div>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+      <h3 class="text-center mt-3">SEARCH PLAYERS</h3>
+      <div class="row">
+        <div class="col-4">
+         <form class="d-flex">
+         <input id="myInput" class="form-control me-2" type="search" placeholder="Search Player" aria-label="Search">
+         <button class="btn " style="background-color: #285741; color:white; font-weight: 600;" type="submit">Search</button>
+        </form>
+       </div>
+       </div>
+      </div>
+    </div>
+<div class="container mt-3">
+  <table class="table table-dark table-striped">
+    <thread >
+      <tr>
+        <th>Player</th>
+        <th>Country</th>
+        <th>Role</th>
+      </tr>
+    </thread>
+    <tbody id="myTable">
+    <tr>
+      <td> <a href="sd.html" style="text-decoration: none;" class="text-light" id="players">SHIKHAR DHAWAN<a> </td>
+      <td>Ind</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="kl.html" style="text-decoration: none;" class="text-light">KL RAHUL</a></td>
+      <td>Ind</td>
+      <td>WK</td>
+    </tr>
+    <tr>
+      <td> <a href="faf.html" style="text-decoration: none;" class="text-light">FAF DU PLESSI</a></td>
+     
+      <td>South Africa</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td><a href="ps.html" style="text-decoration: none;" class="text-light">PRITHVI SHAH</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td><a href="ss.html" style="text-decoration: none;" class="text-light">SANJU SAMSON</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td><a href="Ma.html" style="text-decoration: none;" class="text-light">MAYANK AGARWAL</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td><a href="jb.html" style="text-decoration: none;" class="text-light">JOS BUTLER</a></td>
+      </td>
+      <td>England</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td><a href="rs.html" style="text-decoration: none;" class="text-light">ROHIT SHARMA</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td><a href="hp.html" style="text-decoration: none;" class="text-light">HARSHAL PATEL</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Bowler</td>
+    </tr>
+    <tr>
+      <td><a href="ak.html" style="text-decoration: none;" class="text-light">AVESH KHAN</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Bowler</td>
+    </tr>
+    <tr>
+      <td><a href="cm.html" style="text-decoration: none;" class="text-light">CHRIS MORRIS</a></td>
+      </td>
+      <td>South-Africa</td>
+      <td>All-Rounder</td>
+    </tr>
+    <tr>
+      <td><a href="rahulchahar.html" style="text-decoration: none;" class="text-light">RAHUL CHAHAR</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Bowler</td>
+    </tr>
+    <tr>
+      <td><a href="rk.html" style="text-decoration: none;" class="text-light">RASHID KHAN</a></td>
+      </td>
+      <td>Afghanisthan</td>
+      <td>Bowler</td>
+    </tr>
+    <tr>
+      <td><a href="sc.html" style="text-decoration: none;" class="text-white">SAM CURRAN</a></td>
+      </td>
+      <td>England</td>
+      <td>All-Rounder</td>
+    </tr>
+    <tr>
+      <td><a href="pc.html" style="text-decoration: none;" class="text-light">PAT CUMMINS</a></td>
+      </td>
+      <td>Australia</td>
+      <td>Bowler</td>
+    </tr>
+    <tr>
+      <td><a href="kj.html" style="text-decoration: none;" class="text-light">KYLE JAMIESON</a></td>
+      </td>
+      <td>New Zealand</td>
+      <td>Bowler</td>
+    </tr>
+    <tr>
+      <td><a href="dchahar.html" style="text-decoration: none;" class="text-light">DEEPAK CHAHAR</a></td>
+      </td>
+      <td>Ind</td>
+      <td>Bowler</td>
+    </tr>
+    <tr>
+      <td> <a href="vk.html" style="text-decoration: none;" class="text-light" id="players">VIRAT KOHLI<a> </td>
+      <td>Ind</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="kw.html" style="text-decoration: none;" class="text-light" id="players">KANE WILLIAMSON<a> </td>
+      <td>  New Zealand</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="vk.html" style="text-decoration: none;" class="text-light" id="players">VIRAT KOHLI<a> </td>
+      <td>Ind</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="rt.html" style="text-decoration: none;" class="text-light" id="players">ROSS TAYLOR<a> </td>
+      <td>  New Zealand</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="af.html" style="text-decoration: none;" class="text-light" id="players">AARON FINCH<a> </td>
+      <td> Australia</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="mw.html" style="text-decoration: none;" class="text-light" id="players">MATHEW WADE<a> </td>
+      <td> Australia</td>
+      <td>WK</td>
+    </tr>
+    <tr>
+      <td> <a href="jt.html" style="text-decoration: none;" class="text-light" id="players">JOE ROOT<a> </td>
+      <td> England</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="em.html" style="text-decoration: none;" class="text-light" id="players">EOIN MORGAN<a> </td>
+      <td> England</td>
+      <td>Batsmen</td>
+    </tr>
+    <tr>
+      <td> <a href="wdk.html" style="text-decoration: none;" class="text-light" id="players">QUINTON DE KOCK<a> </td>
+      <td>South Africa</td>
+      <td>WK</td>
+    </tr>
+    <tr>
+      <td> <a href="kp.html" style="text-decoration: none;" class="text-light" id="players">KIERON POLLARD<a> </td>
+      <td>West Indies</td>
+      <td>All-Rounder</td>
+    </tr>
+    <tr>
+      <td> <a href="js.html" style="text-decoration: none;" class="text-light" id="players">JASON HOLDER<a> </td>
+      <td>West Indies</td>
+      <td>All-Rounder</td>
+    </tr>
+   
+   </tbody>
+    
+  </table>
+     
+                    
+    </div>
+  </div>
+</div>
+
+      </body>
+      </html>
